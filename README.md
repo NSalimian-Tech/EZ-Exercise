@@ -9,7 +9,7 @@ This project is an Object-Oriented Programming (OOP) exercise using Python and F
 * **Polymorphism:** Different marker colors and popup content for each type.
 
 ## Preview
-![Map Preview](map_preview.PNG)
+![Map Preview](map_preview.png)
 
 ## How to run
 1. Install requirements: `pip install folium`
