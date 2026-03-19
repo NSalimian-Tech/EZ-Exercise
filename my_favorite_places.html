@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d04d82ba5d74a466e9f8a849065e7456 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d04d82ba5d74a466e9f8a849065e7456" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d04d82ba5d74a466e9f8a849065e7456 = L.map(
+                "map_d04d82ba5d74a466e9f8a849065e7456",
+                {
+                    center: [48.8566, 2.3522],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3ae90b56246c8fddd716c8ae501f7a3f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3ae90b56246c8fddd716c8ae501f7a3f.addTo(map_d04d82ba5d74a466e9f8a849065e7456);
+        
+    
+            var marker_13a7ab89d810a7cef2b4642f695e959b = L.marker(
+                [48.8606, 2.3376],
+                {
+}
+            ).addTo(map_d04d82ba5d74a466e9f8a849065e7456);
+        
+    
+            var icon_08fed970f739743eb3a48506b92741e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4258f517cc65b3e6be3050b3c7f035e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4c5e8ac1c254254b952c823beeed8d1 = $(`<div id="html_a4c5e8ac1c254254b952c823beeed8d1" style="width: 100.0%; height: 100.0%;"><b>MUSEUM: Louvre Museum</b><br>Entry: €17</div>`)[0];
+                popup_4258f517cc65b3e6be3050b3c7f035e1.setContent(html_a4c5e8ac1c254254b952c823beeed8d1);
+            
+        
+
+        marker_13a7ab89d810a7cef2b4642f695e959b.bindPopup(popup_4258f517cc65b3e6be3050b3c7f035e1)
+        ;
+
+        
+    
+    
+            marker_13a7ab89d810a7cef2b4642f695e959b.bindTooltip(
+                `<div>
+                     Louvre Museum
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_13a7ab89d810a7cef2b4642f695e959b.setIcon(icon_08fed970f739743eb3a48506b92741e9);
+            
+    
+            var marker_e7290835167b46fa217c778a375cdc16 = L.marker(
+                [48.8566, 2.3522],
+                {
+}
+            ).addTo(map_d04d82ba5d74a466e9f8a849065e7456);
+        
+    
+            var icon_6ffa528d4d0079d230d5c83edaea8042 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7aa28aa2d3ebfd3d49ee16b17539a3bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0d1e7bbcab5e4291ee9006e0c5f4e2d = $(`<div id="html_d0d1e7bbcab5e4291ee9006e0c5f4e2d" style="width: 100.0%; height: 100.0%;"><b>RESTAURANT: Cafe Paris</b><br>Food: French</div>`)[0];
+                popup_7aa28aa2d3ebfd3d49ee16b17539a3bc.setContent(html_d0d1e7bbcab5e4291ee9006e0c5f4e2d);
+            
+        
+
+        marker_e7290835167b46fa217c778a375cdc16.bindPopup(popup_7aa28aa2d3ebfd3d49ee16b17539a3bc)
+        ;
+
+        
+    
+    
+            marker_e7290835167b46fa217c778a375cdc16.bindTooltip(
+                `<div>
+                     Cafe Paris
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e7290835167b46fa217c778a375cdc16.setIcon(icon_6ffa528d4d0079d230d5c83edaea8042);
+            
+    
+            var marker_63533148ea0eca5454bede2bc6abc720 = L.marker(
+                [48.8462, 2.3372],
+                {
+}
+            ).addTo(map_d04d82ba5d74a466e9f8a849065e7456);
+        
+    
+            var icon_f0d1ffbf32eaaa719be995635e12230e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e07abc8c1dffabb2c0f540380cbcf65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1dcdd40da6b615600526998ac6ab4975 = $(`<div id="html_1dcdd40da6b615600526998ac6ab4975" style="width: 100.0%; height: 100.0%;"><b>PARK: Luxembourg Garden</b><br>Playground: Yes</div>`)[0];
+                popup_8e07abc8c1dffabb2c0f540380cbcf65.setContent(html_1dcdd40da6b615600526998ac6ab4975);
+            
+        
+
+        marker_63533148ea0eca5454bede2bc6abc720.bindPopup(popup_8e07abc8c1dffabb2c0f540380cbcf65)
+        ;
+
+        
+    
+    
+            marker_63533148ea0eca5454bede2bc6abc720.bindTooltip(
+                `<div>
+                     Luxembourg Garden
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63533148ea0eca5454bede2bc6abc720.setIcon(icon_f0d1ffbf32eaaa719be995635e12230e);
+            
+    
+            var marker_7bec126b75f02b3ef418eb0dee2b9843 = L.marker(
+                [48.8584, 2.2945],
+                {
+}
+            ).addTo(map_d04d82ba5d74a466e9f8a849065e7456);
+        
+    
+            var icon_87bdd06fc7365547590ae037c0357a37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41729f6a0c16b86e0da43d28813bb1c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b712f073ca477e23566b1a5a26648b5 = $(`<div id="html_3b712f073ca477e23566b1a5a26648b5" style="width: 100.0%; height: 100.0%;"><b>Eiffel Tower</b><br>Click for more info!</div>`)[0];
+                popup_41729f6a0c16b86e0da43d28813bb1c9.setContent(html_3b712f073ca477e23566b1a5a26648b5);
+            
+        
+
+        marker_7bec126b75f02b3ef418eb0dee2b9843.bindPopup(popup_41729f6a0c16b86e0da43d28813bb1c9)
+        ;
+
+        
+    
+    
+            marker_7bec126b75f02b3ef418eb0dee2b9843.bindTooltip(
+                `<div>
+                     Eiffel Tower
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7bec126b75f02b3ef418eb0dee2b9843.setIcon(icon_87bdd06fc7365547590ae037c0357a37);
+            
+</script>
+</html>
